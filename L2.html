@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(4,100px);
+            grid-template-rows: repeat(3,1fr);
+        }
+        .s1{
+            display: flex;
+            background-color: aqua;
+            grid-row: 1/4;  
+        }
+        .s2{
+            display: flex;
+            grid-column: 2/4;
+            background-color: rgb(188, 55, 148);
+        }
+        .s3{
+            display: flex;
+            background-color: rgb(231, 124, 124);
+        }
+        .s4{
+            display: flex;
+            background-color: rgb(110, 243, 139);
+        }
+        .s5{
+            display: flex;
+            background-color: rgb(39, 145, 211);
+        }
+        .s6{
+            display: flex;
+            grid-column: 4/5;
+            grid-row: 2/4;
+            background-color: rgb(43, 206, 221);
+        }
+        .s7{
+            display: flex;
+            background-color: rgb(225, 246, 86);
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+           
+        }
+        .s8{
+            display: flex;
+            background-color: rgb(244, 9, 166);
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+         <div class="s1"></div>
+        <div class="s2"></div>
+        <div class="s3"></div>
+        <div class="s4"></div>
+        <div class="s5"></div>
+        <div class="s6"></div>
+        <div class="s7"></div>
+        <div class="s8"></div>
+    </div>
+</body>
+</html>
